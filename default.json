@@ -1,0 +1,47 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Centralized Ansible Galaxy role version management",
+  "platformAutomerge": true,
+  "packageRules": [
+    {
+      "description": "Block automerge for non-approved Ansible Galaxy role versions",
+      "matchManagers": ["ansible-galaxy"],
+      "automerge": false
+    },
+    {
+      "description": "Auto-merge approved versions of pluggero.upgrade",
+      "matchManagers": ["ansible-galaxy"],
+      "matchPackageNames": ["pluggero.upgrade"],
+      "matchNewValue": "/^(1\\.0\\.0|1\\.1\\.0|1\\.2\\.0)$/",
+      "automerge": true
+    },
+    {
+      "description": "Auto-merge approved versions of pluggero.user_setup",
+      "matchManagers": ["ansible-galaxy"],
+      "matchPackageNames": ["pluggero.user_setup"],
+      "matchNewValue": "/^2\\.5\\.0$/",
+      "automerge": true
+    },
+    {
+      "description": "Auto-merge approved versions of pluggero.common_pkgs",
+      "matchManagers": ["ansible-galaxy"],
+      "matchPackageNames": ["pluggero.common_pkgs"],
+      "matchNewValue": "/^2\\.3\\.0$/",
+      "automerge": true
+    },
+    {
+      "description": "Auto-merge approved versions of pluggero.python",
+      "matchManagers": ["ansible-galaxy"],
+      "matchPackageNames": ["pluggero.python"],
+      "matchNewValue": "/^1\\.6\\.0$/",
+      "automerge": true
+    },
+    {
+      "description": "Auto-merge approved versions of pluggero.virtualbox_guest",
+      "matchManagers": ["ansible-galaxy"],
+      "matchPackageNames": ["pluggero.virtualbox_guest"],
+      "matchNewValue": "/^2\\.4\\.0$/",
+      "automerge": true
+    }
+  ]
+}
