@@ -39,7 +39,7 @@
     {
       "description": "Auto-merge approved versions of pluggero.fish",
       "matchManagers": ["ansible-galaxy"],
-      "matchPackageNames": ["pluggero.python"],
+      "matchPackageNames": ["pluggero.fish"],
       "matchNewValue": "/^(2\\.5\\.0|2\\.6\\.0|2\\.7\\.0)$/",
       "automerge": true
     },
