@@ -37,6 +37,13 @@
       "automerge": true
     },
     {
+      "description": "Auto-merge approved versions of pluggero.fish",
+      "matchManagers": ["ansible-galaxy"],
+      "matchPackageNames": ["pluggero.python"],
+      "matchNewValue": "/^(2\\.5\\.0|2\\.6\\.0|2\\.7\\.0)$/",
+      "automerge": true
+    },
+    {
       "description": "Auto-merge approved versions of pluggero.virtualbox_guest",
       "matchManagers": ["ansible-galaxy"],
       "matchPackageNames": ["pluggero.virtualbox_guest"],
